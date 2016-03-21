@@ -1,6 +1,5 @@
 function matchRuleShort(str, rule) {
   rule = rule.replace(/[*]/g, ".*").toLowerCase().trim();
-  console.log(str+" - "+rule);
   return new RegExp(rule, "i").test(str);
 }
 
