@@ -1,0 +1,22 @@
+{
+   "name": "PrimeCaution",
+   "description": "Zeigt eine Warnung bei Prime-Produkten die nicht durch Amazon versendet werden.",
+   "version": "1.0.0",
+   "manifest_version": 2,
+   "icons": {
+      "128": "icon.png",
+      "48": "icon_48.png",
+      "32": "icon_32.png"
+   },
+   "browser_action": {
+    "default_title": "PrimeCaution",
+    "default_icon": "icon.png"
+   },
+   "incognito": "split",
+   "background": {
+      "persistent": true,
+      "scripts": [ "background.js" ]
+   },
+   "permissions": [ "https://www.amazon.de/*", "https://amazon.de/*", "tabs", "http://www.amazon.de/*", "http://amazon.de/*" ],
+   "web_accessible_resources": [ "prime_reseller.png"  ]
+}
