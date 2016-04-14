@@ -8,7 +8,7 @@ function isPrime(){
 }
 
 function isFBA(){
-  return (matchRuleShort(document.getElementById('merchant-info').innerHTML, "Versand durch Amazon"));
+  return (matchRuleShort(document.getElementById('merchant-info').innerHTML, "Versand durch Amazon") || matchRuleShort(document.getElementById('merchant-info').innerHTML, "Versandt und verkauft von Amazon"));
 }
 
 (function() {
