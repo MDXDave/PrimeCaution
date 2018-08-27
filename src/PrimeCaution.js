@@ -4,7 +4,7 @@ function matchRuleShort(str, rule) {
 }
 
 function isPrime(){
-  return (document.getElementsByClassName('a-icon-prime').length>0);
+  return (document.getElementById('desktop_unifiedPrice').getElementsByClassName('a-icon-prime').length>0);
 }
 
 function isFBA(){
